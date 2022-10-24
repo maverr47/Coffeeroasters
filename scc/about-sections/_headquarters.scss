@@ -1,0 +1,30 @@
+.headquarters {
+  margin-top: 168px;
+  padding-left: 85px;
+  &__title {
+    font-family: $title-font;
+    font-size: $card-title-font-size;
+    line-height: 32px;
+    color: #83888f;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+  }
+  &__item {
+    width: 285px;
+    margin-top: 72px;
+    .hq__title {
+      font-family: $title-font;
+      font-size: 32px;
+      line-height: 36px;
+      margin-top: 45px;
+      color: #333d4b;
+    }
+    .hq__subtitle {
+      margin-top: 24px;
+      color: #333d4b;
+    }
+  }
+}

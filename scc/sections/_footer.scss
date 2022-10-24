@@ -17,6 +17,7 @@
     list-style-type: none;
     .nav__item {
       text-transform: uppercase;
+      font-family: $nav-font;
       font-size: $nav-font-size;
       &:hover a {
         color: $main-font-color;

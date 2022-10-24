@@ -1,0 +1,19 @@
+.commitment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+
+  margin-top: 168px;
+  &__title {
+    font-family: $title-font;
+    font-size: $section-title-font-size;
+    line-height: 48px;
+    color: #333d4b;
+  }
+  &__subtitle {
+    width: 540px;
+    margin-top: 32px;
+    color: #333d4b;
+  }
+}

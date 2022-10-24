@@ -2,4 +2,13 @@
   margin-top: 45px;
   padding: 137px 85px;
   background-image: url(/assets/images/Bitmap_1.png);
+  &__title {
+    font-family: $title-font;
+    font-size: $section-title-font-size;
+    line-height: 48px;
+  }
+  &__subtitle {
+    width: 445px;
+    margin-top: 24px;
+  }
 }

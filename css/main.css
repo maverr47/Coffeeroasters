@@ -1,9 +1,4 @@
-.footer__list,
-.footer__left,
-.footer__page,
-.collection__list,
-.header__page .nav,
-.header__page {
+.footer__list, .footer__left, .footer__page, .collection__list, .header__page .nav, .header__page {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -251,6 +246,7 @@ body {
 }
 .footer__nav .nav__item {
   text-transform: uppercase;
+  font-family: "Barlow-Bold";
   font-size: 12px;
 }
 .footer__nav .nav__item:hover a {
@@ -263,4 +259,97 @@ body {
 .footer__list {
   gap: 24px;
   list-style-type: none;
-} /*# sourceMappingURL=main.css.map */
+}
+
+.about-hero {
+  margin-top: 45px;
+  padding: 137px 85px;
+  background-image: url(/assets/images/Bitmap_1.png);
+}
+.about-hero__title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  line-height: 48px;
+}
+.about-hero__subtitle {
+  width: 445px;
+  margin-top: 24px;
+}
+
+.commitment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+  margin-top: 168px;
+}
+.commitment__title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  line-height: 48px;
+  color: #333d4b;
+}
+.commitment__subtitle {
+  width: 540px;
+  margin-top: 32px;
+  color: #333d4b;
+}
+
+.quality {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 245px;
+  background-color: #282f38;
+  padding-left: 85px;
+  padding-right: 85px;
+  border-radius: 10px;
+}
+.quality__text {
+  padding-top: 100px;
+  padding-bottom: 176px;
+}
+.quality__title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  line-height: 48px;
+}
+.quality__subtitle {
+  width: 540px;
+  margin-top: 32px;
+  opacity: 0.8;
+}
+.quality__pic {
+  margin-top: -76px;
+  border-radius: 6px;
+}
+
+.headquarters {
+  margin-top: 168px;
+  padding-left: 85px;
+}
+.headquarters__title {
+  font-family: "Fraunces";
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+.headquarters__list {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+.headquarters__item {
+  width: 285px;
+  margin-top: 72px;
+}
+.headquarters__item .hq__title {
+  font-family: "Fraunces";
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 45px;
+  color: #333d4b;
+}
+.headquarters__item .hq__subtitle {
+  margin-top: 24px;
+  color: #333d4b;
+}/*# sourceMappingURL=main.css.map */

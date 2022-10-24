@@ -1,0 +1,27 @@
+.quality {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 245px;
+  background-color: $background-color;
+  padding-left: 85px;
+  padding-right: 85px;
+  border-radius: 10px;
+  &__text {
+    padding-top: 100px;
+    padding-bottom: 176px;
+  }
+  &__title {
+    font-family: $title-font;
+    font-size: $section-title-font-size;
+    line-height: 48px;
+  }
+  &__subtitle {
+    width: 540px;
+    margin-top: 32px;
+    opacity: 0.8;
+  }
+  &__pic {
+    margin-top: -76px;
+    border-radius: 6px;
+  }
+}
