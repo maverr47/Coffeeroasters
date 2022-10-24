@@ -1,0 +1,37 @@
+.hero {
+  margin-top: 45px;
+  padding: 116px 85px;
+  background-image: url(/assets/images/Bitmap.jpg);
+  &__title {
+    font-family: $title-font;
+    font-size: 72px;
+    line-height: 72px;
+    color: #fefcf7;
+    width: 493px;
+  }
+  &__subtitle {
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 445px;
+    margin-top: 32px;
+  }
+  &__btn {
+    background-color: $button-bg-color;
+    border-radius: 6px;
+    border: none;
+    margin-top: 56px;
+    padding: 15px 31px;
+
+    font-family: $title-font;
+    color: #333d4b;
+
+    &:hover {
+      background-color: $button-hover-color;
+      color: #fefcf7;
+    }
+    &:active {
+      background-color: $cards-active-color;
+      color: #333d4b;
+    }
+  }
+}

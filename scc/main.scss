@@ -1,0 +1,18 @@
+// home page
+@import "./variables";
+@import "./global";
+@import "./fonts";
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/collection";
+@import "./sections/choose";
+@import "./sections/work.scss";
+@import "./sections/footer";
+
+// about page
+@import "./about-sections/about-hero";
+@import "./about-sections/commitment";
+@import "./about-sections/quality";
+@import "./about-sections/headquarters";
+
+// subscribe page

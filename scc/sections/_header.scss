@@ -1,0 +1,26 @@
+.header {
+  padding-top: 44px;
+  &__page {
+    @extend %flex-c-sb;
+    .nav {
+      font-family: $nav-font;
+      font-size: $nav-font-size;
+
+      list-style-type: none;
+      text-transform: uppercase;
+
+      @extend %flex-c-sb;
+      gap: 32px;
+
+      &__item {
+        a {
+          text-decoration: none;
+          color: $nav-font-color;
+          &:hover {
+            color: #333d4b;
+          }
+        }
+      }
+    }
+  }
+}

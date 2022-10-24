@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  color: $main-font-color;
+  line-height: 26px;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}

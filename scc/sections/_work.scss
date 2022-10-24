@@ -1,0 +1,59 @@
+.work {
+  margin-top: 200px;
+  padding: 0 85px;
+  &__title {
+    font-family: $title-font;
+    font-size: $card-title-font-size;
+    line-height: 32px;
+    color: $nav-font-color;
+  }
+  &__line {
+    position: relative;
+    margin-top: 95px;
+    .line__oval1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .line__oval2 {
+      position: absolute;
+      left: 380px;
+      top: 0;
+    }
+    .line__oval3 {
+      position: absolute;
+      left: 760px;
+      top: 0;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+
+    margin-top: 82px;
+  }
+  &__item {
+    &_num {
+      font-family: $title-font;
+      font-size: 72px;
+      line-height: 72px;
+      color: #fdd6ba;
+    }
+    &_title {
+      width: 255px;
+      font-family: $title-font;
+      font-size: 32px;
+      line-height: 36px;
+      margin-top: 38px;
+      color: #333d4b;
+    }
+    &_subtitle {
+      margin-top: 42px;
+      color: #333d4b;
+    }
+  }
+  &__btn {
+    margin-top: 64px;
+  }
+}

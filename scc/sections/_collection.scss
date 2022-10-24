@@ -1,0 +1,34 @@
+.collection {
+  margin-top: 160px;
+
+  &__title {
+    font-family: $title-font;
+    font-size: 150px;
+    line-height: 72px;
+    text-align: center;
+    background: -webkit-linear-gradient(#dadad8, #fefcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // margin-bottom: -50px;
+    padding: 20px 86px;
+    margin-bottom: -40px;
+    mix-blend-mode: normal;
+  }
+  &__list {
+    @extend %flex-c-sb;
+  }
+  &__item {
+    width: 255px;
+    text-align: center;
+  }
+  .card__title {
+    font-family: $title-font;
+    font-size: $card-title-font-size;
+    color: #333d4b;
+    margin-top: 70px;
+  }
+  .card__subtitle {
+    color: #333d4b;
+    margin-top: 24px;
+  }
+}

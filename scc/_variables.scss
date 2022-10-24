@@ -1,0 +1,20 @@
+$main-font: "Barlow-Regular";
+$nav-font: "Barlow-Bold";
+$title-font: "Fraunces";
+$main-font-size: 16px;
+$nav-font-size: 12px;
+$section-title-font-size: 40px;
+$card-title-font-size: 24px;
+$main-font-color: #fefcf7;
+$nav-font-color: #83888f;
+$background-color: #282f38;
+$button-bg-color: #f4f1eb;
+$button-hover-color: #66d2cf;
+$cards-bg-color: #0e8784;
+$cards-active-color: #fdd6ba;
+
+%flex-c-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

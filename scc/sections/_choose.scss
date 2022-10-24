@@ -1,0 +1,52 @@
+.choose {
+  &__page {
+    margin-top: 200px;
+
+    background-color: $background-color;
+    border-radius: 10px;
+  }
+  &__text {
+    text-align: center;
+
+    padding: 100px 370px;
+    padding-bottom: 300px;
+  }
+  &__title {
+    font-family: $title-font;
+    font-size: $card-title-font-size;
+  }
+  &__subtitle {
+    margin-top: 32px;
+    opacity: 0.8;
+  }
+  &__cards {
+    margin-top: -240px;
+    display: flex;
+    justify-content: center;
+    &_title {
+      font-family: $title-font;
+      font-size: $card-title-font-size;
+      margin-top: 56px;
+    }
+    &_subtitle {
+      margin-top: 24px;
+      opacity: 0.8;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+  }
+  &__item {
+    width: 350px;
+
+    padding: 72px 48px 48px 48px;
+    text-align: center;
+
+    background-color: $cards-bg-color;
+    border-radius: 8px;
+  }
+}

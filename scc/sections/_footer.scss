@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 200px;
+
+  &__page {
+    @extend %flex-c-sb;
+    padding: 47px 85px;
+    background-color: $background-color;
+  }
+  &__left {
+    @extend %flex-c-sb;
+    gap: 103px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style-type: none;
+    .nav__item {
+      text-transform: uppercase;
+      font-size: $nav-font-size;
+      &:hover a {
+        color: $main-font-color;
+      }
+      a {
+        text-decoration: none;
+        color: $nav-font-color;
+      }
+    }
+  }
+  &__list {
+    @extend %flex-c-sb;
+    gap: 24px;
+    list-style-type: none;
+  }
+}
