@@ -1,0 +1,16 @@
+.subs-hero {
+  margin-top: 52px;
+  padding: 134px 85px;
+  background-image: url(/assets/images/subs-hero.png);
+  border-radius: 10px;
+  &__title {
+    font-family: $title-font;
+    font-size: 72px;
+    line-height: 72px;
+  }
+  &__subtitle {
+    width: 445px;
+    margin-top: 32px;
+    opacity: 0.8;
+  }
+}

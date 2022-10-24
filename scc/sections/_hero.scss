@@ -2,6 +2,7 @@
   margin-top: 45px;
   padding: 116px 85px;
   background-image: url(/assets/images/Bitmap.jpg);
+  border-radius: 10px;
   &__title {
     font-family: $title-font;
     font-size: 72px;
@@ -30,7 +31,7 @@
       color: #fefcf7;
     }
     &:active {
-      background-color: $cards-active-color;
+      background-color: $cards-hover-color;
       color: #333d4b;
     }
   }

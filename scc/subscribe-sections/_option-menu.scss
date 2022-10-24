@@ -1,0 +1,40 @@
+.option-question {
+  display: flex;
+  // gap: 170px;
+  justify-content: space-between;
+  margin-top: 168px;
+  padding-right: 85px;
+  padding-left: 85px;
+}
+
+.option-menu {
+  &__line {
+    opacity: 0.5;
+  }
+  &__text {
+    width: 255px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: $title-font;
+    font-size: $card-title-font-size;
+    line-height: 32px;
+    margin: 24px 0;
+    color: #acafb2;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:hover {
+      color: #b5b7b9;
+      span {
+        color: #858a90;
+      }
+    }
+    &:active {
+      color: #858a90;
+      span {
+        color: #333d4b;
+      }
+    }
+  }
+}

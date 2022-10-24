@@ -1,0 +1,116 @@
+.blitz-question {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+  }
+  &__item {
+    .question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__text {
+        font-family: $title-font;
+        font-size: $section-title-font-size;
+        line-height: 48px;
+        color: $nav-font-color;
+      }
+    }
+    .arrow-up {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  }
+  .answer-list {
+    @extend %flex-c-sb;
+    margin-top: 56px;
+    .answer-item {
+      padding: 32px 28px;
+      padding-bottom: 84px;
+      background-color: $cards-bg-color;
+      border-radius: 8px;
+      transition: background-color 0.3s linear;
+      .answer-title {
+        font-family: $title-font;
+        font-size: $card-title-font-size;
+        line-height: 32px;
+        color: #333d4b;
+      }
+      .answer-subtitle {
+        width: 172px;
+        margin-top: 24px;
+        color: #333d4b;
+      }
+      &_active {
+        background-color: $cards-active-color;
+        .answer-title {
+          color: #fff;
+        }
+        .answer-subtitle {
+          color: $main-font-color;
+        }
+        &:hover {
+          .answer-title {
+            color: #333d4b;
+          }
+          .answer-subtitle {
+            color: #333d4b;
+          }
+        }
+      }
+      &:hover {
+        background-color: $cards-hover-color;
+      }
+    }
+  }
+  .order {
+    margin-top: 84px;
+    padding: 31px 64px 27px 64px;
+    background-color: $background-color;
+    &__title {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 400;
+      font-size: 16px;
+      opacity: 0.5;
+    }
+    &__subtitle {
+      margin-top: 8px;
+      width: 602px;
+      font-family: $title-font;
+      font-size: $card-title-font-size;
+      line-height: 40px;
+      color: #fff;
+    }
+    .green-text {
+      color: #0e8784;
+    }
+  }
+  .create-button {
+    text-align: right;
+    .create-plan-btn {
+      margin-top: 40px;
+      padding: 15px 35px;
+      background-color: $button-bg-color;
+      font-family: $title-font;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      border: none;
+      color: #333d4b;
+      border-radius: 6px;
+      &:hover {
+        background-color: $button-hover-color;
+        color: #fefcf7;
+      }
+      &:active {
+        color: #333d4b;
+        background-color: $cards-hover-color;
+      }
+    }
+  }
+}

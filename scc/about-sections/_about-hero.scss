@@ -1,7 +1,8 @@
 .about-hero {
   margin-top: 45px;
   padding: 137px 85px;
-  background-image: url(/assets/images/Bitmap_1.png);
+  background-image: url(/assets/images/about-hero.png);
+  border-radius: 10px;
   &__title {
     font-family: $title-font;
     font-size: $section-title-font-size;

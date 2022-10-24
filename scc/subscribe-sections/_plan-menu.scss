@@ -1,0 +1,15 @@
+.plan-menu {
+  margin-top: 155px;
+  padding-top: 33px;
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-bottom: 100px;
+  background-color: $background-color;
+  border-radius: 10px;
+  &__title {
+    color: $main-font-color;
+  }
+  &__subtitle {
+    color: $main-font-color;
+  }
+}

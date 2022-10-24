@@ -12,7 +12,7 @@
     margin-top: 95px;
     .line__oval1 {
       position: absolute;
-      left: 0;
+      left: -14px;
       top: 0;
     }
     .line__oval2 {
@@ -22,7 +22,7 @@
     }
     .line__oval3 {
       position: absolute;
-      left: 760px;
+      left: 745px;
       top: 0;
     }
   }
@@ -32,6 +32,7 @@
     gap: 95px;
 
     margin-top: 82px;
+    list-style-type: none;
   }
   &__item {
     &_num {
