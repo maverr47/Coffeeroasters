@@ -1,5 +1,6 @@
 .choose {
   &__page {
+    min-height: 577px;
     margin-top: 200px;
 
     background-color: $background-color;
@@ -8,14 +9,20 @@
   &__text {
     text-align: center;
 
-    padding: 100px 370px;
-    padding-bottom: 300px;
+    // padding: 100px 370px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__title {
+    max-width: 330px;
     font-family: $title-font;
-    font-size: $card-title-font-size;
+    font-size: $section-title-font-size;
   }
   &__subtitle {
+    max-width: 540px;
     margin-top: 32px;
     opacity: 0.8;
   }
@@ -23,6 +30,8 @@
     margin-top: -240px;
     display: flex;
     justify-content: center;
+    padding-right: 85px;
+    padding-left: 85px;
     &_title {
       font-family: $title-font;
       font-size: $card-title-font-size;
@@ -41,7 +50,7 @@
     list-style-type: none;
   }
   &__item {
-    width: 350px;
+    width: auto;
 
     padding: 72px 48px 48px 48px;
     text-align: center;
@@ -50,3 +59,76 @@
     border-radius: 8px;
   }
 }
+
+@media only screen and(max-width: 1111px) {
+  .choose {
+    &__page {
+      height: 573px;
+    }
+    &__cards {
+      margin-top: -320px;
+      &:last-child {
+        margin-bottom: 100px;
+      }
+    }
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      padding: 41px 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 55px;
+      text-align: start;
+    }
+    &__cards_title {
+      margin-top: 0;
+    }
+    &__cards_subtitle {
+      max-width: 344px;
+    }
+  }
+}
+
+@media only screen and (max-width: 588px) {
+  .choose {
+    &__page {
+      height: 902px;
+    }
+    &__subtitle {
+      max-width: 350px;
+    }
+    &__cards {
+      margin-top: -540px;
+      padding-left: 48px;
+      padding-right: 48px;
+      &_subtitle {
+        max-width: 212px;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__item {
+      max-width: 280px;
+      min-height: 382px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 72px 33px;
+      padding-bottom: 48px;
+      &_subtitle {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .choose {
+    &__page {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+} ;

@@ -22,5 +22,19 @@
         }
       }
     }
+    .hamburger-icon {
+      display: none;
+    }
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .header__page {
+    .nav {
+      display: none;
+    }
+    .hamburger-icon {
+      display: block;
+    }
+  }
+} ;

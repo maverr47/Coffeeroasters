@@ -2,6 +2,9 @@
   margin-top: 45px;
   padding: 137px 85px;
   background-image: url(/assets/images/about-hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 10px;
   &__title {
     font-family: $title-font;
@@ -9,7 +12,22 @@
     line-height: 48px;
   }
   &__subtitle {
-    width: 445px;
+    max-width: 445px;
     margin-top: 24px;
   }
 }
+
+@media only screen and(max-width: 650px) {
+  .about-hero {
+    padding: auto;
+    text-align: center;
+    &__title {
+      font-size: 28px;
+      line-height: 28px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+} ;

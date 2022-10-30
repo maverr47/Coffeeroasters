@@ -10,31 +10,44 @@
   &__line {
     position: relative;
     margin-top: 95px;
+    hr {
+      max-width: 760px;
+      height: 1px;
+      border-color: #fdd6ba;
+      border: 2px solid #fdd6ba;
+    }
     .line__oval1 {
       position: absolute;
       left: -14px;
-      top: 0;
+      top: -15px;
     }
     .line__oval2 {
       position: absolute;
-      left: 380px;
-      top: 0;
+      left: 360px;
+      top: -15px;
     }
     .line__oval3 {
       position: absolute;
       left: 745px;
-      top: 0;
+      top: -15px;
     }
   }
   &__list {
     display: flex;
-    align-items: center;
-    gap: 95px;
+    align-items: baseline;
+    align-content: flex-start;
+    justify-content: space-between;
 
     margin-top: 82px;
+    margin-bottom: 64px;
+    padding: 10px;
     list-style-type: none;
   }
   &__item {
+    max-width: 100%;
+    height: auto;
+
+    // margin-bottom: 64px;
     &_num {
       font-family: $title-font;
       font-size: 72px;
@@ -42,19 +55,95 @@
       color: #fdd6ba;
     }
     &_title {
-      width: 255px;
+      max-width: 200px;
       font-family: $title-font;
-      font-size: 32px;
-      line-height: 36px;
-      margin-top: 38px;
-      color: #333d4b;
-    }
-    &_subtitle {
+      font-size: 28px;
+      line-height: 32px;
       margin-top: 42px;
       color: #333d4b;
     }
+    &_subtitle {
+      max-width: 285px;
+      min-height: 154px;
+      height: auto;
+      margin-top: 38px;
+      color: #333d4b;
+      font-size: 15px;
+    }
   }
   &__btn {
-    margin-top: 64px;
+    width: 217px;
+    height: 56px;
+    background-color: $cards-active-color;
+    border-radius: 6px;
+    border: none;
+    padding: 15px 31px;
+
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 25px;
+    color: $main-font-color;
+  }
+}
+
+@media only screen and (max-width: 1086px) {
+  .work {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .work {
+    &__line {
+      hr {
+        max-width: 467px;
+      }
+      .line__oval2 {
+        left: 202px;
+      }
+      .line__oval3 {
+        left: 432px;
+      }
+    }
+    &__list {
+      gap: 10px;
+      margin-bottom: 44px;
+    }
+  }
+}
+@media only screen and (max-width: 588px) {
+  .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+      text-align: center;
+    }
+    &__line {
+      display: none;
+    }
+    &__list {
+      max-width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 56px;
+      text-align: center;
+    }
+    &__item {
+      text-align: center;
+      &_title {
+        max-width: 327px;
+        margin-top: 24px;
+      }
+      &_subtitle {
+        max-width: 327px;
+        margin-top: 24px;
+      }
+    }
+    &__btn {
+      text-align: center;
+    }
   }
 }

@@ -5,6 +5,10 @@
   gap: 125px;
 
   margin-top: 168px;
+  &__pic {
+    max-width: 445px;
+    height: auto;
+  }
   &__title {
     font-family: $title-font;
     font-size: $section-title-font-size;
@@ -12,8 +16,63 @@
     color: #333d4b;
   }
   &__subtitle {
-    width: 540px;
+    max-width: 540px;
     margin-top: 32px;
     color: #333d4b;
+    opacity: 0.8;
   }
 }
+
+@media only screen and(max-width: 1029px) {
+  .commitment {
+    gap: 69px;
+    &__title {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media only screen and(max-width:950px) {
+  .commitment {
+    &__pic {
+      width: 281px;
+      height: 470px;
+    }
+  }
+}
+
+@media only screen and(max-width: 706px) {
+  .commitment {
+    gap: 40px;
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and(max-width: 673px) {
+  .commitment {
+    width: 100%;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+    &__pic {
+      width: 329px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and(max-width: 350px) {
+  .commitment {
+    &__pic {
+      width: 280px;
+    }
+  }
+} ;

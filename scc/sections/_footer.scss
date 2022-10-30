@@ -10,6 +10,12 @@
     @extend %flex-c-sb;
     gap: 103px;
   }
+  &__logo {
+    &_icon {
+      max-width: 236px;
+      height: 26;
+    }
+  }
   &__nav {
     display: flex;
     align-items: center;
@@ -32,9 +38,43 @@
     @extend %flex-c-sb;
     gap: 24px;
     list-style-type: none;
+    .facebook-icon:hover path {
+      fill: $cards-hover-color;
+    }
+    .twitter-icon:hover path {
+      fill: $cards-hover-color;
+    }
+    .instagram-icon:hover path {
+      fill: $cards-hover-color;
+    }
   }
 }
 
 .subs-footer {
   margin-top: 168px;
+}
+
+@media only screen and (max-width: 920px) {
+  .footer {
+    &__page {
+      flex-direction: column;
+      gap: 65px;
+    }
+    &__left {
+      flex-direction: column;
+      gap: 33px;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .footer {
+    &__page {
+      padding: 54px;
+    }
+    &__nav {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
 }

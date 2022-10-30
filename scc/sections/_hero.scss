@@ -2,29 +2,33 @@
   margin-top: 45px;
   padding: 116px 85px;
   background-image: url(/assets/images/Bitmap.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 10px;
   &__title {
     font-family: $title-font;
     font-size: 72px;
     line-height: 72px;
     color: #fefcf7;
-    width: 493px;
+    max-width: 493px;
   }
   &__subtitle {
     mix-blend-mode: normal;
     opacity: 0.8;
-    width: 445px;
+    max-width: 445px;
     margin-top: 32px;
   }
   &__btn {
-    background-color: $button-bg-color;
+    background-color: $cards-active-color;
     border-radius: 6px;
     border: none;
     margin-top: 56px;
     padding: 15px 31px;
 
     font-family: $title-font;
-    color: #333d4b;
+    font-size: 18px;
+    line-height: 25px;
+    color: $main-font-color;
 
     &:hover {
       background-color: $button-hover-color;
@@ -36,3 +40,91 @@
     }
   }
 }
+
+@media only screen and (max-width: 1110px) {
+  .hero {
+    &__title {
+      font-size: 62px;
+      line-height: 62px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  .hero {
+    &__title {
+      font-size: 57px;
+      line-height: 57px;
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .hero {
+    &__title {
+      max-width: 330px;
+      font-size: 48px;
+      line-height: 48px;
+    }
+    &__subtitle {
+      max-width: 398px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 553px) {
+  .hero {
+    padding: 100px 55px;
+  }
+}
+@media only screen and (max-width: 498px) {
+  .hero {
+    padding: 100px 35px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .hero {
+    padding: 100px 25px;
+    text-align: center;
+
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 20px;
+    }
+    &__btn {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .hero {
+    padding: 50px 15px;
+  }
+}
+
+@media only screen and (max-width: 337px) {
+  .hero {
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      max-width: 280px;
+    }
+    &__subtitle {
+      font-size: 12px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    &__btn {
+      margin-top: 20px;
+    }
+  }
+} ;

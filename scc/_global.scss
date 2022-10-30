@@ -13,6 +13,14 @@ body {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
+  width: 90vw;
+
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 95vw;
+  }
 }
