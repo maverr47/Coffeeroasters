@@ -1181,7 +1181,7 @@ body {
   color: #83888f;
 }
 .blitz-question__item .arrow-up {
-  border: solid black;
+  border: solid #0e8784;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -1197,7 +1197,7 @@ body {
   padding-bottom: 84px;
   background-color: #f4f1eb;
   border-radius: 8px;
-  transition: background-color 0.3s linear;
+  transition: all 0.3s linear;
 }
 .blitz-question .answer-list .answer-item .answer-title {
   font-family: "Fraunces";
@@ -1267,6 +1267,7 @@ body {
   border: none;
   color: #333d4b;
   border-radius: 6px;
+  transition: all 0.3s ease;
 }
 .blitz-question .create-button .create-plan-btn:hover {
   background-color: #66d2cf;

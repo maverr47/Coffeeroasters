@@ -20,7 +20,7 @@
       }
     }
     .arrow-up {
-      border: solid black;
+      border: solid #0e8784;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 3px;
@@ -37,7 +37,7 @@
       padding-bottom: 84px;
       background-color: $cards-bg-color;
       border-radius: 8px;
-      transition: background-color 0.3s linear;
+      transition: all 0.3s linear;
       .answer-title {
         font-family: $title-font;
         font-size: $card-title-font-size;
@@ -109,6 +109,7 @@
       border: none;
       color: #333d4b;
       border-radius: 6px;
+      transition: all 0.3s ease;
       &:hover {
         background-color: $button-hover-color;
         color: #fefcf7;
