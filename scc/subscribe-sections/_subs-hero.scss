@@ -2,6 +2,9 @@
   margin-top: 52px;
   padding: 134px 85px;
   background-image: url(/assets/images/subs-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
   border-radius: 10px;
   &__title {
     font-family: $title-font;
@@ -9,8 +12,43 @@
     line-height: 72px;
   }
   &__subtitle {
-    width: 445px;
+    max-width: 445px;
     margin-top: 32px;
     opacity: 0.8;
   }
 }
+
+@media only screen and(max-width: 770px) {
+  .subs-hero {
+    padding: 126px 57px;
+    background-image: url(/assets/images/subs-hero-tablet.png);
+
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .subs-hero {
+    padding: 100px 24px;
+    text-align: center;
+    background-image: url(/assets/images/subs-hero-mobile.png);
+    // background-size: 327px 400px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+      width: 100%;
+    }
+    &__subtitle {
+      margin-bottom: 136px;
+    }
+  }
+} ;

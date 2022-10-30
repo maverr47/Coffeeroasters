@@ -1,4 +1,7 @@
 .blitz-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__list {
     display: flex;
     flex-direction: column;
@@ -28,6 +31,7 @@
   .answer-list {
     @extend %flex-c-sb;
     margin-top: 56px;
+    gap: 23px;
     .answer-item {
       padding: 32px 28px;
       padding-bottom: 84px;
@@ -41,7 +45,7 @@
         color: #333d4b;
       }
       .answer-subtitle {
-        width: 172px;
+        max-width: 172px;
         margin-top: 24px;
         color: #333d4b;
       }
@@ -68,8 +72,10 @@
     }
   }
   .order {
+    height: auto;
     margin-top: 84px;
     padding: 31px 64px 27px 64px;
+    border-radius: 8px;
     background-color: $background-color;
     &__title {
       text-transform: uppercase;
@@ -80,7 +86,7 @@
     }
     &__subtitle {
       margin-top: 8px;
-      width: 602px;
+      max-width: 602px;
       font-family: $title-font;
       font-size: $card-title-font-size;
       line-height: 40px;
@@ -114,3 +120,80 @@
     }
   }
 }
+
+@media only screen and (max-width: 987px) {
+  .blitz-question {
+    &__list {
+      gap: 100px;
+    }
+    &__item {
+      .question {
+        &__text {
+          font-size: 32px;
+        }
+      }
+    }
+    .answer-list {
+      width: 100%;
+      gap: 10px;
+      margin-top: 40px;
+      .answer-item {
+        padding: 32px 25px;
+
+        .answer-subtitle {
+          max-width: 172px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 734px) {
+  .blitz-question {
+    &__list {
+      gap: 100px;
+    }
+    &__item {
+      .question {
+        &__text {
+          max-width: 240px;
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+    }
+    .answer-list {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 16px;
+      margin-top: 32px;
+
+      .answer-item {
+        width: 80vw;
+        min-height: 140px;
+        padding: 24px 25px;
+        .answer-subtitle {
+          max-width: 70%;
+          margin-top: 8px;
+        }
+      }
+    }
+    .order {
+      width: 80vw;
+      padding: 37px 25px;
+    }
+  }
+}
+
+@media only screen and(max-width: 456px) {
+  .blitz-question {
+    .answer-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+} ;
