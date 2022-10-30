@@ -1,10 +1,12 @@
 .quality {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   margin-top: 245px;
   background-color: $background-color;
   padding-left: 85px;
   padding-right: 85px;
+
   border-radius: 10px;
   &__text {
     padding-top: 100px;
@@ -16,12 +18,87 @@
     line-height: 48px;
   }
   &__subtitle {
-    width: 540px;
+    max-width: 540px;
     margin-top: 32px;
     opacity: 0.8;
   }
   &__pic {
     margin-top: -76px;
     border-radius: 6px;
+  }
+  &-tablet-pic {
+    display: none;
+    border-radius: 6px;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .quality {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1191px) {
+  .quality {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 320px;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 67px;
+    &__pic {
+      display: none;
+    }
+    &-tablet-pic {
+      display: block;
+      margin-top: -160px;
+    }
+    &__text {
+      padding: 0;
+      text-align: center;
+    }
+    &__title {
+      margin-top: 64px;
+    }
+    &__subtitle {
+      margin-top: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .quality {
+    &-tablet-pic {
+      width: 379px;
+      height: 256px;
+      margin-top: -128px;
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .quality {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 61px;
+    &-tablet-pic {
+      width: 279px;
+      height: 156px;
+      margin-top: -78px;
+    }
+    &__text {
+      width: 100%;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 28px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 }

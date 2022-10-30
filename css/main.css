@@ -771,6 +771,7 @@ body {
 .quality {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   margin-top: 245px;
   background-color: #282f38;
   padding-left: 85px;
@@ -787,7 +788,7 @@ body {
   line-height: 48px;
 }
 .quality__subtitle {
-  width: 540px;
+  max-width: 540px;
   margin-top: 32px;
   opacity: 0.8;
 }
@@ -795,7 +796,75 @@ body {
   margin-top: -76px;
   border-radius: 6px;
 }
+.quality-tablet-pic {
+  display: none;
+  border-radius: 6px;
+}
 
+@media only screen and (max-width: 1270px) {
+  .quality {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 1191px) {
+  .quality {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 320px;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 67px;
+  }
+  .quality__pic {
+    display: none;
+  }
+  .quality-tablet-pic {
+    display: block;
+    margin-top: -160px;
+  }
+  .quality__text {
+    padding: 0;
+    text-align: center;
+  }
+  .quality__title {
+    margin-top: 64px;
+  }
+  .quality__subtitle {
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .quality-tablet-pic {
+    width: 379px;
+    height: 256px;
+    margin-top: -128px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .quality {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 61px;
+  }
+  .quality-tablet-pic {
+    width: 279px;
+    height: 156px;
+    margin-top: -78px;
+  }
+  .quality__text {
+    width: 100%;
+  }
+  .quality__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .quality__subtitle {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 .headquarters {
   margin-top: 168px;
   padding-left: 85px;
@@ -827,6 +896,40 @@ body {
   color: #333d4b;
 }
 
+@media only screen and (max-width: 1070px) {
+  .headquarters {
+    padding: 0;
+  }
+  .headquarters__list {
+    gap: 60px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .headquarters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .headquarters__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+  }
+  .headquarters__item {
+    margin: 0;
+    padding: 0;
+  }
+  .headquarters__item:first-child {
+    margin-top: 72px;
+  }
+  .headquarters .hq__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
 .subs-hero {
   margin-top: 52px;
   padding: 134px 85px;

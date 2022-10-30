@@ -28,3 +28,39 @@
     }
   }
 }
+
+@media only screen and (max-width: 1070px) {
+  .headquarters {
+    padding: 0;
+    &__list {
+      gap: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .headquarters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 80px;
+    }
+    &__item {
+      margin: 0;
+      padding: 0;
+    }
+    &__item:first-child {
+      margin-top: 72px;
+    }
+    .hq__title {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+}
