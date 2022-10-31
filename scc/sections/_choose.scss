@@ -20,6 +20,7 @@
     max-width: 330px;
     font-family: $title-font;
     font-size: $section-title-font-size;
+    line-height: 40px;
   }
   &__subtitle {
     max-width: 540px;
@@ -129,6 +130,14 @@
     &__page {
       padding-left: 10px;
       padding-right: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .choose {
+    &__cards {
+      margin-top: -520px;
     }
   }
 } ;

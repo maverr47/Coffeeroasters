@@ -47,11 +47,27 @@
     .instagram-icon:hover path {
       fill: $cards-hover-color;
     }
+    .facebook-icon:active path {
+      fill: $cards-active-color;
+    }
+    .twitter-icon:active path {
+      fill: $cards-active-color;
+    }
+    .instagram-icon:active path {
+      fill: $cards-active-color;
+    }
   }
 }
 
 .subs-footer {
   margin-top: 168px;
+}
+@media only screen and (max-width: 1047px) {
+  .footer {
+    &__left {
+      gap: 40px;
+    }
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -67,7 +83,7 @@
   }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 474px) {
   .footer {
     &__page {
       padding: 54px;
