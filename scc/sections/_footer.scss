@@ -32,6 +32,21 @@
       a {
         text-decoration: none;
         color: $nav-font-color;
+        &::after {
+          content: "";
+          width: 0;
+          height: 3px;
+          background-color: $main-font-color;
+          margin: auto;
+          display: block;
+        }
+        &:hover {
+          color: $main-font-color;
+        }
+        &:hover::after {
+          width: 100%;
+          transition: width 0.3s linear;
+        }
       }
     }
   }

@@ -29,10 +29,12 @@
     font-size: 18px;
     line-height: 25px;
     color: $main-font-color;
+    transition: all 0.3s ease;
 
     &:hover {
       background-color: $button-hover-color;
       color: #fefcf7;
+      transform: scale(1.3);
     }
     &:active {
       background-color: $cards-hover-color;
