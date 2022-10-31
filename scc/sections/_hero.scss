@@ -61,6 +61,8 @@
 
 @media only screen and (max-width: 770px) {
   .hero {
+    // background-image: url(/assets/images/hero-tablet.png);
+    // border-radius: 10px;
     &__title {
       max-width: 330px;
       font-size: 48px;
@@ -77,6 +79,8 @@
 @media only screen and (max-width: 553px) {
   .hero {
     padding: 100px 55px;
+    background-image: url(/assets/images/hero-mobile.png);
+    border-radius: 8px;
   }
 }
 @media only screen and (max-width: 498px) {
@@ -105,7 +109,7 @@
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   .hero {
     padding: 50px 15px;
   }

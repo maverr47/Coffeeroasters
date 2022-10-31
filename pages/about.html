@@ -65,11 +65,23 @@
         </section>
 
         <section class="commitment">
-          <img
-            src="/assets/images/commitment.jpg"
-            alt="a man making coffee"
-            class="commitment__pic"
-          />
+          <picture>
+            <source
+              media="(max-width: 673px)"
+              srcset="../assets/images/commitment-mobile.png"
+              class="commitment__pic"
+            />
+            <source
+              media="(max-width: 950px)"
+              srcset="../assets/images/commitment-tablet.png"
+              class="commitment__pic"
+            />
+            <img
+              src="../assets/images/commitment.jpg"
+              alt="a man making coffee"
+              class="commitment__pic"
+            />
+          </picture>
           <div class="commitment__text">
             <h3 class="commitment__title">Our commitment</h3>
             <p class="commitment__subtitle">
@@ -101,20 +113,23 @@
               coffee, so that brewing is easy and enjoyable.
             </p>
           </div>
-          <img
-            width="445"
-            height="474"
-            src="/assets/images/quality.png"
-            alt="a hand holding a cup of coffee"
-            class="quality__pic"
-          />
-          <img
-            width="573"
-            height="320"
-            src="/assets/images/quality-tablet.png"
-            alt="a hand holding a cup of coffee"
-            class="quality-tablet-pic"
-          />
+          <picture>
+            <source
+              media="(max-width: 470px)"
+              srcset="../assets/images/quality-mobile.png"
+              class="quality__pic"
+            />
+            <source
+              media="(max-width: 1191px)"
+              srcset="../assets/images/quality-tablet.png"
+              class="quality__pic"
+            />
+            <img
+              src="../assets/images/quality.png"
+              alt="a hand holding a cup of coffee"
+              class="quality__pic"
+            />
+          </picture>
         </section>
 
         <section class="headquarters">

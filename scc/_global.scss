@@ -10,6 +10,7 @@ body {
   font-size: $main-font-size;
   color: $main-font-color;
   line-height: 26px;
+  transition: all 0.3s ease;
 }
 
 .container {

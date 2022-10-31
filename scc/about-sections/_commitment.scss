@@ -6,8 +6,7 @@
 
   margin-top: 168px;
   &__pic {
-    max-width: 445px;
-    height: auto;
+    border-radius: 8px;
   }
   &__title {
     font-family: $title-font;
@@ -38,15 +37,6 @@
   }
 }
 
-@media only screen and(max-width:950px) {
-  .commitment {
-    &__pic {
-      width: 281px;
-      height: 470px;
-    }
-  }
-}
-
 @media only screen and(max-width: 706px) {
   .commitment {
     gap: 40px;
@@ -62,10 +52,6 @@
     flex-direction: column;
     gap: 48px;
     text-align: center;
-    &__pic {
-      width: 329px;
-      height: 400px;
-    }
   }
 }
 
