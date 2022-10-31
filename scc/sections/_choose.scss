@@ -61,7 +61,28 @@
   }
 }
 
-@media only screen and(max-width: 1111px) {
+@media only screen and (max-width: 1314px) {
+  .choose {
+    &__item {
+      padding: 72px 38px 48px 38px;
+    }
+  }
+}
+@media only screen and (max-width: 1247px) {
+  .choose {
+    &__item {
+      padding: 72px 28px 48px 28px;
+    }
+  }
+}
+@media only screen and (max-width: 1181px) {
+  .choose {
+    &__item {
+      padding: 72px 18px 48px 18px;
+    }
+  }
+}
+@media only screen and(max-width: 1114px) {
   .choose {
     &__page {
       height: 573px;
